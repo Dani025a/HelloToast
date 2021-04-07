@@ -13,7 +13,8 @@
             android:background="@color/colorPrimary"
             android:textColor="#FFFFFF" android:onClick="countUp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/button_toast"
+    />
     <Button
             android:text="@string/button_label_toast"
             android:layout_width="299dp"
@@ -21,8 +22,7 @@
             android:background="@color/colorPrimary"
             android:textColor="#FFFFFF" android:onClick="showToast"
             app:layout_constraintStart_toEndOf="@+id/button"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/button"/>
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="@string/count_initial_value"
             android:layout_width="0dp"
